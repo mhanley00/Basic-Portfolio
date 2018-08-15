@@ -1,33 +1,70 @@
+/* main page styling */
 header{
-    background-color:#333333;
+    background-color: #ffffff;
+    border-bottom-color: #cccccc;
+    border-bottom-width: 2px;
     margin: 0 auto;
 }
 
 h1{
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #eee;
-    background-color:#333333;
     text-align: center;
-    font-size: 28px;
-    margin: 0 auto;
+    background-color: #4aaaa5;
+    font-size: 22px;
+    width: 300px;
+    margin: 15px;
     padding:15px ;
 }
 
 h2{
-    color:#333333;
-    font-size: 24px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-size: 22px;
     margin: 0 auto;
 }
+
+/* this is the navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li{
+    float: right;
+}
+li a{
+    display: block;
+    padding: 8px;
+}
+
+li a:hover {
+    background-color: #4aaaa5;
+}
+
+/* .topbar {
+    float: right;
+    background-color: #666;
+    color: azure;
+    float:right;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 33%;
+} */
 
 body {
     margin: 0;
     padding: 0;
     background-color: #efeee7;
-    color: #333333;
-    font-family: "Georgia",Times New Roman,Times,serif;
+    color:#777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .container {
-    width: 1024px;
+    width: 960px;
     margin: 0 auto;
 }
 
@@ -54,3 +91,35 @@ body {
 a{
     color: red;
 }
+
+/* contact page styles */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 8px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[id=email], select, textarea {
+    width: 100%;
+    padding: 8px; 
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+textarea{
+    height: 200px;
+    
+}
+
+input[type=submit] {
+    background-color:#4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
