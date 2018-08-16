@@ -4,7 +4,9 @@ header{
     border-bottom-color: #cccccc;
     border-bottom-width: 2px;
     padding: 20px;
+    padding-right: 120px;
     margin-bottom: 20px;
+    height: 20px;
     /* float:left;
     width: 100%; */
   }
@@ -20,6 +22,7 @@ h1{
     margin: 15px;
     padding:15px ;
     float: left;
+    display: inline;
 }
 
 ul {
@@ -47,6 +50,10 @@ li a:hover {
     background-color: #4aaaa5;
 }
 
+.portfolio {
+    border-right: #333;
+    border-left: #333;
+}
 /* .topbar {
     float: right;
     background-color: #666;
@@ -92,26 +99,37 @@ body {
     border:1px solid #cccccc;
 }
 
-#main-bio,
-#contact-info,
-#bio-image {
+/* portfolio page */
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
     float: left;
-    margin: 10px;
-    background-color: #efeee7;
+    width: 25%;
 }
 
-#bio-image {
-    width: 200px;
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-#main-bio {
-    width: 70%;
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
 }
 
-#contact-info {
-    width: 30%;
-    line-height: 1.5;
-}
+/* end of portfolio-specific */
 
 /* contact page styles */
 input[type=text], select, textarea {
@@ -144,3 +162,11 @@ input[type=submit] {
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+}
+footer {
+    margin-top: 20px;
+    color: #333;
+    background: #ccc;
+    clear:both;
+    height: 20px;
+}
