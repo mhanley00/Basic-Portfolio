@@ -16,13 +16,7 @@
     float:left;
     padding: 20px 0px 20px 0px;
   } 
-  /* .container {
-    width: 930px;
-    background-color:#ffffff;
-    margin: 0 auto;
-    margin-top:80px;
-    padding:30px;
-    border:1px solid #cccccc;  */
+  
  
 h1{
     font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -37,16 +31,6 @@ h1{
     /* float: left; */
     display: inline;
 } 
-
-/* .header-right {
-    float: right;
-} */
-
-/* .header a{
-    text-decoration: none;
-    list-style-type: none;
-} */
-
 
 
 ul {
@@ -169,6 +153,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/* footer, hopefully obviously  */
 .footer {
     position: fixed;
     left: 0;
@@ -180,4 +165,33 @@ input[type=submit] {
     text-align: center;
     font-size: 10px;
     border-top: 4px solid #4aaaa5;
+}
+
+/* color overlay on portfolio page */
+span {
+    background-color:#4aaaa5;
+    padding: 20px 70px 20px 70px;
+    color: #eee;
+    position: absolute; 
+    top: 80px; 
+}
+.row {
+    margin: 0px -16px;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    position: relative
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    padding: 10px;
 }
